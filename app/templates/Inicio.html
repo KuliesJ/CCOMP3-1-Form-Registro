@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <title>Desarrollo Basado en Plataformas</title>
+	  <link rel="stylesheet" href={{ url_for('static', filename='inicio.css') }}>
+   	</head>
+   	<body>
+	<section class="formulario">
+		<a>Formulario</a>
+		<form action="{{ url_for('login') }}" method="post">
+		<p class="caja">
+		Nombres:<br>
+		<input class="cajita" type="text" name="nombres" placeholder="Enter your name"><br>
+		Apellidos:<br>
+		<input class="cajita" type="text" name="apellidos" placeholder="Enter your surename"><br>
+		Nombre de usuario:<br>
+		<input class="cajita" type="text" name="usuario" placeholder="Enter your username"><br>
+		Correo:<br>
+		<input class="cajita" type="text" name="correo" placeholder="sampletext@gmail.com"><br>
+		Contraseña:<br>
+		<input class="cajita" type="password" name="contrasena" placeholder="Enter your password"><br>
+		Fecha de nacimiento:<br>
+		<input class="cajita" type="date" name="fecha"><br>
+		<button>Submit</button></p>
+		</form>
+	</section>
+   	</body>
+</html>

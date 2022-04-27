@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	  <title>
+	  Desarrollo Basado en Plataformas
+	  </title>
+	  <link rel="stylesheet" href={{ url_for('static', filename='inicio.css') }}>
+   	</head>
+   	<body>
+	<section class="formulario">
+	<a>Perfil</a>
+		<a class="perfil">
+		Nombres:</a>
+		<a class="info">
+		{{name}}<br></a>
+		<a class="perfil">
+		Apellidos</a>
+		<a class="info">
+		{{surename}}<br></a>
+		<a class="perfil">
+		Nombre de usuario:</a>
+		<a class="info">
+		{{user}}<br></a>
+		<a class="perfil">
+		Correo electrónico: </a>
+		<a class="info">
+		{{email}}<br></a>
+		<a class="perfil">
+		Contraseña: </a>
+		<a class="info">
+		{{password}}<br></a>
+		<a class="perfil">
+		Fecha de nacimiento:</a>
+		<a class="info">
+		{{b_date}}<br></a>
+	
+	</section>
+   	</body>
+</html>
